@@ -1,0 +1,14 @@
+Structure
+---------
+
+- Introduction
+- Examples for Machine Learning + Demo of own OCR
+- Types of machine learning and when to use which?
+- Regression
+- Overfit and Underfit
+- K-Means
+- SVMs
+- Neural Networks
+- Demo again
+- How to learn more
+- Thanks and Q&A (prepare two questions to ask to myself)
