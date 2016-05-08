@@ -1,0 +1,6 @@
+/OCRTest/images
+Thumbs.db
+.DS_Store
+/OCRTest/target
+.idea
+*.iml

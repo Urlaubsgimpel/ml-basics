@@ -11,4 +11,5 @@ Structure
 - Neural Networks
 - Demo again
 - How to learn more
+- Libraries
 - Thanks and Q&A (prepare two questions to ask to myself)
