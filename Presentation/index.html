@@ -4,9 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Basics of Machine Learning</title>
-
-		<meta name="description" content="">
+		<title>The Basics of Machine Learning</title>
 		<meta name="author" content="Roman Tilgner">
 
 		<link rel="stylesheet" href="css/reveal.css">
@@ -27,13 +25,52 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section class="center">
-					<h1 style="position: absolute; top: 0px; left: 0px;">Title</h1>
-					<h3>Testus</h3>
+				<section>
+					<small class="small-addition" style="left: 121px; top: 16px;">The Basics of</small>
+					<h1>Machine Learning</h1>
+					<img src="img/placeholder.jpg"/>
+					<h3 class="fragment fade-up">No magic, just math!</h3>
 				</section>
 				<section>
-					<h2>Title</h2>
-					Muh
+					<section>
+						<h2>Regression</h2>
+						<h3 class="fragment">Predicting numbers!</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Overfitting and Underfitting</h2>
+					</section>
+				</section>
+				<section>
+					<section>
+						<small class="small-addition" style="left: 387px; top: 8px;">Clustering</small>
+						<h2>K-Means</h2>
+					</section>
+				</section>
+				<section>
+					<section>
+						<small class="small-addition" style="left: 123px; top: 8px;">Classification</small>
+						<h2>Support Vector Machines (SVM)</h2>
+					</section>
+				</section>
+				<section>
+					<section>
+						<small class="small-addition" style="left: 284px; top: 8px;">Classification</small>
+						<h2>Neural Networks</h2>
+					</section>
+				</section>
+				<section>
+					<h2>Demo</h2>
+				</section>
+				<section>
+					<h2>Popular Libraries</h2>
+				</section>
+				<section>
+					<h2>How to Learn More?</h2>
+				</section>
+				<section>
+					<h2>Thank you!</h2>
 				</section>
 			</div>
 		</div>
@@ -45,7 +82,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
-				center: false,
+				center: true,
 				transition: 'convex',
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
@@ -54,6 +91,7 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/math/math.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
