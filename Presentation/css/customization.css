@@ -1,0 +1,81 @@
+body {
+    background: #03191F;
+    background-color: #03191F;
+}
+
+.reveal {
+    color: #EADECE;
+}
+
+::selection {
+    background: #C97E17;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    margin: 0 0 20px 0;
+    color: #d6881e;
+}
+
+.reveal a {
+    color: #d6881e;
+}
+
+.reveal a:hover {
+    color: #d6881e;
+}
+
+.reveal section img {
+    border: 4px solid #CFC5B5;
+}
+
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+    border-right-color: #995B0F;
+}
+
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+    border-left-color: #995B0F;
+}
+
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+    border-bottom-color: #995B0F;
+}
+
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+    border-top-color: #995B0F;
+}
+
+.reveal .controls .navigate-left.enabled:hover {
+    border-right-color: #d6881e;
+}
+
+.reveal .controls .navigate-right.enabled:hover {
+    border-left-color: #d6881e;
+}
+
+.reveal .controls .navigate-up.enabled:hover {
+    border-bottom-color: #d6881e;
+}
+
+.reveal .controls .navigate-down.enabled:hover {
+    border-top-color: #d6881e;
+}
+
+.reveal .progress span {
+    background: #d6881e;
+}
+
+.small-annotation {
+    position: absolute;
+    color: #DCB481;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
