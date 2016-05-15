@@ -44,8 +44,30 @@
 					</section>
 				</section>
 				<section>
-					<section>
+					<section data-transition="none">
 						<h2>Overfitting and Underfitting</h2>
+						<img class="plain fragment" style="width: 300px" src="img/fitting-no-curve.svg"/>
+					</section>
+					<section data-transition="none">
+						<h2>Overfitting and Underfitting</h2>
+						<img class="plain" style="width: 300px" src="img/fitting-ok.svg"/>
+						<p class="fragment">\(f(x) = ax^2 * bx + c\)</p>
+						<p class="fragment">Model is just right!</p>
+						<p class="fragment">Follows the overall trend but skips outliers.</p>
+					</section>
+					<section data-transition="none">
+						<h2>Overfitting and Underfitting</h2>
+						<img class="plain" style="width: 300px" src="img/underfitting.svg"/>
+						<p class="fragment">\(f(x) = ax + b\)</p>
+						<p class="fragment">Model is too simple: Underfitting / Low Variance / High Bias!</p>
+						<p class="fragment">Predictions using this model will probably be inaccurate.</p>
+					</section>
+					<section data-transition="none">
+						<h2>Overfitting and Underfitting</h2>
+						<img class="plain" style="width: 300px" src="img/overfitting.svg"/>
+						<p class="fragment">\(f(x) = ax^{16} + bx^{15} + \ldots\)</p>
+						<p class="fragment">Model is too complex: Overfitting / High Variance / Low Bias!</p>
+						<p class="fragment">The model captures noise / outliers.</p>
 					</section>
 				</section>
 				<section>
@@ -73,34 +95,49 @@
 				<section>
 					<section>
 						<h2>Popular Libraries</h2>
-					</section>
-					<section>
-						<h2>Popular Libraries</h2>
-						<table>
-							<tr>
+						<table class="centered-table">
+							<tr class="fragment">
 								<th>Java</th>
-								<th>Python</th>
-								<th>"Big Players"</th>
-							</tr>
-							<tr>
 								<td>
-									Apache Spark<br />
-									Apache Mahout
+									Apache Spark (MLlib)<br />
+									<img src="img/spark.png" style="height: 50px; background-color: #FFF;"/>
 								</td>
+								<td>
+									Apache Mahout<br />
+									<img src="img/mahout.png" style="height: 50px; "/>
+								</td>
+							</tr>
+							<tr class="fragment">
+								<th>Python</th>
 								<td>
 									Scikit-learn<br />
-									PyBrain
+									<img src="img/scikit.png" style="height: 50px; background-color: #FFF;"/>
 								</td>
 								<td>
+									PyBrain<br />
+									<img src="img/pybrain.gif" style="height: 50px; background-color: #FFF;"/>
+								</td>
+							</tr>
+							<tr class="fragment">
+								<th>"Big Players"</th>
+								<td>
 									Tensorflow (Google)<br />
+									<img src="img/tensorflow.png" style="height: 50px; background-color: #FFF;"/>
+								</td>
+								<td>
 									DSSTNE (Amazon)
 								</td>
 							</tr>
 						</table>
-						<p>More Info on this <a href="https://daoudclarke.github.io/machine%20learning%20in%20practice/2013/10/08/machine-learning-libraries/">Overview</a></p>
+						<aside class="notes">
+							Java solutions mainly for distributed environments
+						</aside>
 					</section>
 					<section>
 						<p>Success depends primarily on the data,<br/>not on using the best library!</p>
+						<aside class="notes">
+							Success regarding ML, not overall project. ;)
+						</aside>
 					</section>
 				</section>
 
@@ -111,9 +148,9 @@
 					<section>
 						<h2>Guidelines &amp; Tips</h2>
 						<ul>
-							<li>Choose the algorithm that best fits your data</li>
-							<li>Fine-tune the model / algorithm</li>
-							<li>Don't be afraid to start over / change features</li>
+							<li class="fragment fade-up">Choose the algorithm that best fits your data</li>
+							<li class="fragment fade-up">Fine-tune the model / algorithm</li>
+							<li class="fragment fade-up">Don't be afraid to start over / change features</li>
 						</ul>
 					</section>
 				</section>
@@ -128,13 +165,18 @@
 							Machine Learning in Action by Peter Harrington
 							(<a href="https://www.manning.com/books/machine-learning-in-action">Link</a>)
 						</li>
-						<li class="fragment fade-up">Trial and error with libraries mentioned before<br/>
-							&amp; data from <a href="http://archive.ics.uci.edu/ml/datasets.html">here</a></li>
+						<li class="fragment fade-up">Trial and error with
+							<a href="https://daoudclarke.github.io/machine%20learning%20in%20practice/2013/10/08/machine-learning-libraries/">common libraries</a>
+							and <a href="http://archive.ics.uci.edu/ml/datasets.html">sample data</a></li>
 					</ul>
 				</section>
 				<section>
 					<h2>Thank you!</h2>
-					<img src="img/placeholder.jpg" alt="Maybe small cute robot?"/>
+					<img src="img/happybot.png" class="plain" style="width: 400px;"/>
+					<div class="bubble fragment fade-left" style="top: 352px; left: 634px;">
+						<div class="bubble-corner"></div>
+						Questions?
+					</div>
 				</section>
 			</div>
 		</div>
