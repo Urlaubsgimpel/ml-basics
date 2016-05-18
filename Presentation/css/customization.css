@@ -123,3 +123,9 @@ div.bubble-corner {
     top: 17px;
     left: -32px;
 }
+
+div.image-source {
+    font-size: 0.35em;
+    position: relative;
+    top: -21px;
+}
