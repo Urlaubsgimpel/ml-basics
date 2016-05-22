@@ -1,0 +1,26 @@
+<svg width="215" height="193" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <ellipse ry="20.5" rx="20.5" id="svg_6" cy="30.988884" cx="32.989334" stroke-width="1.5" stroke="#000" fill="#dcb481"/>
+  <ellipse ry="20.5" rx="20.5" id="svg_15" cy="95.025234" cx="32.989334" stroke-width="1.5" stroke="#000" fill="#dcb481"/>
+  <ellipse ry="20.5" rx="20.5" id="svg_9" cy="95.025234" cx="178.213875" stroke-width="1.5" stroke="#000" fill="#dcb481"/>
+  <ellipse ry="20.5" rx="20.5" id="svg_2" cy="159.034325" cx="32.989334" stroke-width="1.5" stroke="#000" fill="#dcb481"/>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="26" id="svg_7" y="36.488884" x="24.489334" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">x</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="26" id="svg_16" y="100.525234" x="24.489334" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">x</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="26" id="svg_10" y="101.525234" x="171.713875" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">y</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="26" id="svg_4" y="164.534325" x="24.489334" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">x</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="13" id="svg_8" y="40.488884" x="36.489334" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">1</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="13" id="svg_17" y="104.525234" x="36.489334" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">2</text>
+  <text stroke="#000" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="13" id="svg_5" y="168.534325" x="36.489334" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">3</text>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_20" y2="88.488884" x2="155.489334" y1="43.488884" x1="52.489334" stroke-width="1.5" stroke="#dcb481" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_21" y2="101.488884" x2="155.489334" y1="159.488884" x1="55.489334" stroke-width="1.5" stroke="#dcb481" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_23" y2="95.488884" x2="155.057719" y1="95.488884" x1="54.489334" stroke-width="1.5" stroke="#dcb481" fill="none"/>
+  <path stroke="#dcb481" transform="rotate(-36.204627990722656 154.76782226562506,101.67879486083986) " id="svg_27" d="m154.983084,101.678794l-2.1316,-4.04l3.83268,4.04l-3.83268,4.04001l2.1316,-4.04001z" fill-opacity="null" stroke-width="1.5" fill="#ffffff"/>
+  <path stroke="#dcb481" transform="rotate(28.002687454223633 155.43449401855466,88.34546661376953) " id="svg_28" d="m155.649744,88.345464l-2.13159,-4.04001l3.83268,4.04001l-3.83268,4.04001l2.13159,-4.04001z" fill-opacity="null" stroke-width="1.5" fill="#ffffff"/>
+  <path stroke="#dcb481" transform="rotate(-0.7257093191146851 154.43449401855338,95.01213836669925) " id="svg_26" d="m154.649747,95.012133l-2.131597,-4.04001l3.83268,4.04001l-3.83268,4.040007l2.131597,-4.040007z" fill-opacity="null" stroke-width="1.5" fill="#ffffff"/>
+ </g>
+</svg>
