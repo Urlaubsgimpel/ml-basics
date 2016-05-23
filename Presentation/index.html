@@ -29,20 +29,29 @@
 				<section>
 					<small class="small-annotation" style="left: 121px; top: 16px;">The Basics of</small>
 					<h1>Machine Learning</h1>
-					<img src="img/placeholder.jpg"/>
+					<img src="img/portal.jpg" style="width: 400px;"/>
 					<h3 class="fragment fade-up">No magic, just math!</h3>
+					<aside class="notes">
+						Goal for this talk:<br />
+						What is ML?<br />
+						What kind of problems can be solved?<br />
+						Impressions of how it works + what the callenges are.<br />
+						How to get started?
+					</aside>
 				</section>
 				<section>
 					<section>
-						<img src="img/placeholder.jpg"/>
+						<img src="img/invoice.jpg" style="width: 400px;"/>
 						<p>Document / Spam Classification</p>
 					</section>
 					<section>
-						<img src="img/placeholder.jpg"/>
+						<img src="img/ocr.jpg" style="width: 500px;"/>
+						<div class="image-source">http://screenshots.en.sftcdn.net/en/scrn/40000/40320/topocr-1.jpg</div>
 						<p>Optical Character Recognition (OCR)</p>
 					</section>
 					<section>
-						<img src="img/placeholder.jpg"/>
+						<img src="img/facerecog.jpg"/>
+						<div class="image-source">http://i2.cdn.turner.com/cnn/2010/TECH/innovation/07/09/face.recognition.facebook/t1larg.tech.face.recognition.courtesy.jpg</div>
 						<p>Face Recognition</p>
 					</section>
 					<section>
@@ -51,17 +60,22 @@
 						<p>Image Analysis</p>
 					</section>
 					<section>
-						<img src="img/placeholder.jpg"/>
+						<img src="img/clinical.jpg"/>
+						<div class="image-source">https://illusionsofautonomy.files.wordpress.com/2014/01/house-white-board.jpg</div>
 						<p>Clinical Decision Support Systems</p>
 					</section>
 					<section>
-						<img src="img/placeholder.jpg"/>
+						<img src="img/weather.jpg"/>
+						<div class="image-source">http://1.bp.blogspot.com/-ueqHGzaPdKA/T6GeMf7vlgI/AAAAAAAABpQ/i4jwMEwTwm4/s640/Weather+map+0000.JPG</div>
 						<p>Weather / Natural Disaster Prediction</p>
 					</section>
 					<section>
 						<img src="img/car.jpg" style="width: 500px;"/>
 						<div class="image-source">http://www.google.com/selfdrivingcar/images/home-where.jpg</div>
 						<p>Self-Driving Cars</p>
+						<aside class="notes">
+							Show demo part1
+						</aside>
 					</section>
 				</section>
 				<section>
@@ -128,14 +142,14 @@
 					</section>
 					<section>
 						<h2>Algorithm Overview</h2>
-						<div class="fragment" style="float: left; width: 30%;">
+						<div class="fragment" data-fragment-index="1" style="float: left; width: 30%;">
 							<p>Value Prediction</p>
 							<div style="background: rgba(230, 76, 28, 0.35); padding: 10px; font-size: 0.8em;">
-								<p>Linear Regression</p>
+								<p class="fragment highlight-red" data-fragment-index="6">Linear Regression</p>
 								<p>Tree-based Regression</p>
 							</div>
 						</div>
-						<div class="fragment" style="float: left; width: 30%; margin: 0 0 0 5%;">
+						<div class="fragment" data-fragment-index="2" style="float: left; width: 30%; margin: 0 0 0 5%;">
 							<p>Classification</p>
 							<div style="background: rgba(201, 230, 28, 0.35); padding: 10px; font-size: 0.8em;">
 								<p>K-Nearest Neighbors</p>
@@ -143,19 +157,19 @@
 								<p>Decision Trees</p>
 								<p>Logistic Regression</p>
 								<p>SVMs</p>
-								<p>Neural Networks</p>
+								<p class="fragment highlight-red" data-fragment-index="6">Neural Networks</p>
 							</div>
 						</div>
-						<div class="fragment" style="float: left; width: 30%; margin: 0 0 0 5%;">
+						<div class="fragment" data-fragment-index="3" style="float: left; width: 30%; margin: 0 0 0 5%;">
 							<p>Clustering</p>
 							<div style="background: rgba(92, 28, 230, 0.35); padding: 10px; font-size: 0.8em;">
-								<p>K-Means</p>
+								<p class="fragment highlight-red" data-fragment-index="6">K-Means</p>
 								<p>Hierachical Clustering</p>
 								<p>Mixture Models</p>
 							</div>
 						</div>
-						<div class="fragment" style="border-top: 1px solid #DCB481; position: absolute; bottom: -50px; left: 0; width: 623px;">Supervised</div>
-						<div class="fragment" style="border-top: 1px solid #DCB481; position: absolute; bottom: -50px; right: 0; width: 288px;">Unsupervised</div>
+						<div class="fragment" data-fragment-index="4" style="border-top: 1px solid #DCB481; position: absolute; bottom: -50px; left: 0; width: 623px;">Supervised</div>
+						<div class="fragment" data-fragment-index="5" style="border-top: 1px solid #DCB481; position: absolute; bottom: -50px; right: 0; width: 288px;">Unsupervised</div>
 					</section>
 				</section>
 				<section>
@@ -204,30 +218,36 @@
 						<img class="fragment fade-out plain" data-fragment-index="1" src="img/fitting-no-curve.svg" style="position: absolute;"/>
 						<img class="fragment plain" data-fragment-index="1" src="img/fitting-ok.svg"/>
 					</section>
+					<section>
+						<h2>Gradient Descent</h2>
+					</section>
+					<section>
+						<h2>Linear Regression - Facts</h2>
+						<ul>
+							<li></li>
+						</ul>
+					</section>
 				</section>
 				<section>
-					<section data-transition="none">
+					<section>
 						<h2>Overfitting and Underfitting</h2>
 						<img class="plain fragment" style="width: 300px" src="img/fitting-no-curve.svg"/>
 					</section>
-					<section data-transition="none">
-						<h2>Overfitting and Underfitting</h2>
+					<section>
 						<img class="plain" style="width: 300px" src="img/fitting-ok.svg"/>
 						<p class="fragment">\(f(x) = ax^2 * bx + c\)</p>
 						<p class="fragment">Model is just right!</p>
 						<p class="fragment">Follows the overall trend but skips outliers.</p>
 					</section>
-					<section data-transition="none">
-						<h2>Overfitting and Underfitting</h2>
+					<section>
 						<img class="plain" style="width: 300px" src="img/underfitting.svg"/>
 						<p class="fragment">\(f(x) = ax + b\)</p>
 						<p class="fragment">Model is too simple: Underfitting / Low Variance / High Bias!</p>
 						<p class="fragment">Predictions using this model will probably be inaccurate.</p>
 					</section>
-					<section data-transition="none">
-						<h2>Overfitting and Underfitting</h2>
+					<section>
 						<img class="plain" style="width: 300px" src="img/overfitting.svg"/>
-						<p class="fragment">\(f(x) = ax^{16} + bx^{15} + \ldots\)</p>
+						<p class="fragment">\(f(x) = ax^{6} + bx^{5} + \ldots\)</p>
 						<p class="fragment">Model is too complex: Overfitting / High Variance / Low Bias!</p>
 						<p class="fragment">The model captures noise / outliers.</p>
 					</section>
@@ -237,11 +257,31 @@
 						<small class="small-annotation" style="left: 387px; top: 8px;">Clustering</small>
 						<h2>K-Means</h2>
 					</section>
-				</section>
-				<section>
 					<section>
-						<small class="small-annotation" style="left: 123px; top: 8px;">Classification</small>
-						<h2>Support Vector Machines (SVM)</h2>
+						<div style="float: left; width: 70%;">
+							<img class="plain fragment fade-out" data-fragment-index="1" src="img/kmeans1.svg" style="position: absolute; width: 600px;"/>
+							<img class="plain fragment current-visible" data-fragment-index="1" src="img/kmeans2.svg" style="position: absolute; width: 600px;"/>
+							<img class="plain fragment current-visible" data-fragment-index="2" src="img/kmeans3.svg" style="position: absolute; width: 600px;"/>
+							<img class="plain fragment current-visible" data-fragment-index="3" src="img/kmeans4.svg" style="position: absolute; width: 600px;"/>
+							<img class="plain fragment current-visible" data-fragment-index="4" src="img/kmeans5.svg" style="position: absolute; width: 600px;"/>
+							<img class="plain fragment current-visible" data-fragment-index="7" src="img/kmeans6.svg" style="width: 600px;"/>
+						</div>
+						<div style="float: right; width: 29%; font-size: 0.7em;">
+							<img class="plain fragment" data-fragment-index="4" src="img/repeat-arrow.svg" style="position: absolute; top: 133px; left: 594px; height: 143px;"/>
+							<ol>
+								<li class="fragment" data-fragment-index="1" style="margin: 0 0 1em 0;">Choose number of clusters and initialize centers</li>
+								<li class="fragment" data-fragment-index="2" style="margin: 0 0 1em 0;">Assign points to cluster</li>
+								<li class="fragment" data-fragment-index="3" style="margin: 0 0 1em 0;">Calculate centroid and move cluster center</li>
+							</ol>
+						</div>
+					</section>
+					<section>
+						<h2>K-Means Facts</h2>
+						<ul>
+							<li class="fragment">Algorithm is simple and scalable</li>
+							<li class="fragment">You have to specify the number of clusters in advance</li>
+							<li class="fragment">Result quality relies heavily on <a href="http://www.naftaliharris.com/blog/visualizing-k-means-clustering/">initialization of clusters</a></li>
+						</ul>
 					</section>
 				</section>
 				<section>
@@ -249,11 +289,53 @@
 						<small class="small-annotation" style="left: 284px; top: 8px;">Classification</small>
 						<h2>Neural Networks</h2>
 					</section>
+					<section>
+						<img src="img/neuron.png" style="background: #FFF; padding: 5px;"/>
+					</section>
+					<section>
+						<img src="img/neural1.svg" class="plain" style="width:40%; float: left;"/>
+						<div style="width: 58%; float: right; text-align: left; font-size: 0.7em;">
+							<p class="fragment" data-fragment-index="1" style="margin: 0 0 2em 0;">\(y = g(\Theta_1 x_1 + \Theta_2 x_2 + \Theta_3 x_3)\)</p>
+							<p class="fragment" data-fragment-index="2">\(\Theta_i\): Weights / parameters of the network. Learned by minimizing prediction error on training data (Gradient Descent).</p>
+							<p class="fragment" data-fragment-index="3">\(g\): The sigmoid function to get output between 0 and 1:</p>
+							<p class="fragment" data-fragment-index="3" style="margin: 0 0 2em 0;">
+								\(g(z) = {1 \over {1 + e^{-z}}}\)
+								<img class="fragment" data-fragment-index="4" src="img/sigmoid.png" style="background: #fff; width: 250px; vertical-align: middle;"/>
+							</p>
+							<p class="fragment" data-fragment-index="5">If \(y < 0.5\), classify as class 1, otherwise class 2.</p>
+						</div>
+						<aside class="notes">
+							y is the neuron's output
+						</aside>
+					</section>
+					<section>
+						<img src="img/neural2.svg" class="plain" style="width:40%; float: left;"/>
+						<div style="width: 58%; float: right; text-align: left; font-size: 0.7em;">
+							<p>Hidden Layers:</p>
+							<p>Layers between input and output layer to increase the complexity of the model.</p>
+							<p class="fragment">Remember overfitting and underfitting!</p>
+							<p class="fragment">Try different amounts of hidden layers and neurons in each layer for your problem.</p>
+						</div>
+					</section>
+					<section>
+						<img src="img/neural3.svg" class="plain" style="width:40%; float: left;"/>
+						<div style="width: 58%; float: right; text-align: left; font-size: 0.7em;">
+							<p>More than 2 classes? No problem!</p>
+							<p class="fragment">Use one \(y\) for each class. The one with the highest value between 0 and 1 wins.</p>
+						</div>
+					</section>
+					<section>
+						<h2>Neural Networks - Facts</h2>
+						<ul>
+							<li class="fragment">Very flexible and thus suitable for most classification problems</li>
+							<li class="fragment">Google's AlphaGo uses multiple neural networks</li>
+							<li class="fragment">Computationally expensive</li>
+						</ul>
+					</section>
 				</section>
 				<section>
 					<h2>Demo</h2>
 				</section>
-
 				<section>
 					<section>
 						<h2>Popular Libraries</h2>
@@ -310,13 +392,13 @@
 					<section>
 						<h2>Guidelines &amp; Tips</h2>
 						<ul>
-							<li class="fragment fade-up">Choose the algorithm that best fits your data</li>
+							<li class="fragment fade-up">Choose the algorithm that best fits your data / problem</li>
 							<li class="fragment fade-up">Fine-tune the model / algorithm</li>
 							<li class="fragment fade-up">Don't be afraid to start over / change features</li>
 						</ul>
 					</section>
 				</section>
-				<section>
+				<section data-transition="convex-in fade-out">
 					<h2>How to Learn More?</h2>
 					<ul>
 						<li class="fragment fade-up">
@@ -332,13 +414,27 @@
 							and <a href="http://archive.ics.uci.edu/ml/datasets.html">sample data</a></li>
 					</ul>
 				</section>
-				<section>
+				<section data-background="#000">
+					<aside class="notes">
+						Recap goals:<br />
+						What is ML?<br />
+						What kind of problems can be solved?<br />
+						Impressions of how it works + what the callenges are.<br />
+						How to get started?
+					</aside>
+				</section>
+				<section data-transition="fade-in convex-out">
 					<h2>Thank you!</h2>
 					<img src="img/happybot.png" class="plain" style="width: 400px;"/>
 					<div class="bubble fragment fade-left" style="top: 352px; left: 634px;">
 						<div class="bubble-corner"></div>
 						Questions?
 					</div>
+					<aside class="notes">
+						Prep. Questions:<br />
+						1. asd<br />
+						2. asd
+					</aside>
 				</section>
 			</div>
 		</div>

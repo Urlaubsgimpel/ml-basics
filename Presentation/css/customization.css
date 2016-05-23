@@ -79,6 +79,10 @@ body {
     letter-spacing: 0.2em;
 }
 
+.reveal .slides section .fragment.highlight-red.visible {
+    color: #d6881e;
+}
+
 table.centered-table th {
     vertical-align: middle;
 }
