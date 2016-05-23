@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>The Basics of Machine Learning</title>
+		<title>Einstieg in Machine Learning</title>
 		<meta name="author" content="Roman Tilgner">
 
 		<link rel="stylesheet" href="css/reveal.css">
@@ -27,22 +27,22 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<small class="small-annotation" style="left: 121px; top: 16px;">The Basics of</small>
+					<small class="small-annotation" style="left: 124px; top: 16px;">Einstieg in</small>
 					<h1>Machine Learning</h1>
 					<img src="img/portal.jpg" style="width: 400px;"/>
 					<h3 class="fragment fade-up">No magic, just math!</h3>
 					<aside class="notes">
-						Goal for this talk:<br />
-						What is ML?<br />
-						What kind of problems can be solved?<br />
-						Impressions of how it works + what the challenges are.<br />
-						How to get started?
+						Ziele des Talks:<br />
+						Was ist ML?<br />
+						Welche Probleme können gelöst werden?<br />
+						Vorstellung verschiedener Methoden / generelles Verständnis.<br />
+						Wo fange ich an?
 					</aside>
 				</section>
 				<section>
 					<section>
 						<img src="img/invoice.jpg" style="width: 400px;"/>
-						<p>Document / Spam Classification</p>
+						<p>Dokument- / Spam-Klassifizierung</p>
 					</section>
 					<section>
 						<img src="img/ocr.jpg" style="width: 500px;"/>
@@ -52,12 +52,12 @@
 					<section>
 						<img src="img/facerecog.jpg"/>
 						<div class="image-source">http://i2.cdn.turner.com/cnn/2010/TECH/innovation/07/09/face.recognition.facebook/t1larg.tech.face.recognition.courtesy.jpg</div>
-						<p>Face Recognition</p>
+						<p>Gesichtserkennung</p>
 					</section>
 					<section>
 						<img src="img/imagerecognition.png" style="width: 500px;"/>
 						<div class="image-source">https://twitter.com/kcimc/status/711192792794591232</div>
-						<p>Image Analysis</p>
+						<p>Bilderkennung</p>
 					</section>
 					<section>
 						<img src="img/clinical.jpg"/>
@@ -67,22 +67,22 @@
 					<section>
 						<img src="img/weather.jpg"/>
 						<div class="image-source">http://1.bp.blogspot.com/-ueqHGzaPdKA/T6GeMf7vlgI/AAAAAAAABpQ/i4jwMEwTwm4/s640/Weather+map+0000.JPG</div>
-						<p>Weather / Natural Disaster Prediction</p>
+						<p>Wetter- / Katastrophenvorhersage</p>
 					</section>
 					<section>
 						<img src="img/car.jpg" style="width: 500px;"/>
 						<div class="image-source">http://www.google.com/selfdrivingcar/images/home-where.jpg</div>
-						<p>Self-Driving Cars</p>
+						<p>Selbstfahrende Autos</p>
 					</section>
 					<section>
 						<img src="img/ai.jpg" style="width: 500px;"/>
 						<div class="image-source">http://static2.techinsider.io/image/56e186c8910584716f8b53b5-1200-675/go%20board%20wide.jpg</div>
-						<p>Artificial Intelligence</p>
+						<p>Künstliche Intelligenz</p>
 					</section>
 				</section>
 				<section>
 					<section>
-						<h2>Introduction</h2>
+						<h2>Einführung</h2>
 					</section>
 					<section>
 						<blockquote>
@@ -91,60 +91,60 @@
 						</blockquote>
 						<p style="text-align:right">– Arthur Samuel (1959)</p>
 						<aside class="notes">
-							What does "learn" mean?
+							Was bedeutet "lernen"?
 						</aside>
 					</section>
 					<section>
-						<h2>The Task</h2>
+						<h2>Die Aufgabe</h2>
 						<div style="position: relative; height: 400px;">
 							<table data-fragment-index="1" class="fragment" style="position: absolute; top: 33px; left: 0px;">
 								<tr>
 									<th style="position: relative;">
-										<span class="fragment fade-out" data-fragment-index="2" style="position: absolute;">Property</span>
+										<span class="fragment fade-out" data-fragment-index="2" style="position: absolute;">Eigenschaft</span>
 										<span class="fragment fade-in" data-fragment-index="2" style="color: #FF4444;">Feature</span>
 									</th>
-									<th>Value</th>
+									<th>Wert</th>
 								</tr>
 								<tr>
-									<td>Height</td>
+									<td>Höhe</td>
 									<td>1.8m</td>
 								</tr>
 								<tr>
-									<td>Eye Color</td>
-									<td>green</td>
+									<td>Augenfarbe</td>
+									<td>grün</td>
 								</tr>
 								<tr><td colspan="2">&hellip;</td></tr>
 							</table>
 							<div class="fragment" data-fragment-index="3" style="position: absolute; left: 455px; top: 54px; background: url(img/arrow.svg) 100% no-repeat; height: 137px; width: 94px;"></div>
 							<span class="fragment current-visible" data-fragment-index="3" style="position: absolute; left: 701px; top: -21px; font-size: 6em; font-weight: bold;">?</span>
 							<ul class="fragment" data-fragment-index="4" style="position: absolute; top: 74px; left: 631px;">
-								<li>Value</li>
-								<li>Class / Label</li>
+								<li>Wert</li>
+								<li>Klasse / Label</li>
 							</ul>
 						</div>
 						<aside class="notes">
-							- Break every problem down into features<br />
-							- Example: Percentage of match for dating site; Percentage for chance of winning for specific game move<br />
-							- Classification: Email: Spam or no Spam?<br />
-							- Transition: How to teach the algorithm?
+							- Jedes Problem in Features aufteilen<br />
+							- Value Prediction: Prozentzahl Dating-Match; Gewinnwahrscheinlichkeit Spielzug<br />
+							- Classification: Spam?<br />
+							- Übergang: Wie beibringen?
 						</aside>
 					</section>
 					<section>
 						<div style="float: left; width: 45%; text-align: left;">
 							<h3>Supervised Learning</h3>
 							<p>
-								The algorithm learns based on pre-labeled example data.
+								Der Algorithmus lernt anhand von gelabelten Beispieldaten.
 							</p>
 						</div>
 						<div class="fragment" style="float: right; width: 45%; text-align: left;">
 							<h3>Unsupervised Learning</h3>
 							<p>
-								The algorithm should figure out structure in the data on its own.
+								Der Algorithmus muss die Struktur der Daten selbst erkennen.
 							</p>
 						</div>
 					</section>
 					<section>
-						<h2>Algorithm Overview</h2>
+						<h2>Überblick über die Algorithmen</h2>
 						<div class="fragment" data-fragment-index="1" style="float: left; width: 30%;">
 							<p>Value Prediction</p>
 							<div style="background: rgba(230, 76, 28, 0.35); padding: 10px; font-size: 0.8em;">
@@ -183,8 +183,8 @@
 					<section>
 						<table style="width: 61%; float: left;">
 							<tr>
-								<th>Water Consumed (ltr.)</th>
-								<th>Work Efficiency (%)</th>
+								<th>Getrunkenes Wasser (ltr.)</th>
+								<th>Arbeitseffizienz (%)</th>
 							</tr>
 							<tr>
 								<td>0.1</td>
@@ -211,11 +211,11 @@
 								<td>???</td>
 							</tr>
 						</table>
-						<div class="fragment" data-fragment-index="1" style="position: absolute; left: 656px; top: 133px; border-left: 1px solid #DCB481; height: 286px; padding: 0 0 0 10px;">Training Data</div>
-						<div class="fragment" data-fragment-index="2" style="position: absolute; left: 656px; top: 443px; border-left: 1px solid #DCB481; height: 46px; padding: 0 0 0 10px;">Prediction</div>
+						<div class="fragment" data-fragment-index="1" style="position: absolute; left: 656px; top: 133px; border-left: 1px solid #DCB481; height: 286px; padding: 0 0 0 10px;">Trainingsdaten</div>
+						<div class="fragment" data-fragment-index="2" style="position: absolute; left: 656px; top: 443px; border-left: 1px solid #DCB481; height: 46px; padding: 0 0 0 10px;">Vorhersage</div>
 						<aside class="notes">
-							- so just one feature in this example, to be able to visualize<br />
-							- normally LOADS of training data
+							- Nur ein feature in diesem Beispiel zum Visualisieren<br />
+							- Normalerweise DEUTLICH mehr Datensätze
 						</aside>
 					</section>
 					<section>
@@ -223,21 +223,21 @@
 							<img class="fragment fade-out plain" data-fragment-index="2" src="img/fitting-no-curve.svg" style="position: absolute; width: 100%;"/>
 							<img class="fragment plain" data-fragment-index="2" src="img/fitting-ok.svg" style="width: 100%;"/>
 						</div>
-						<div style="font-size: 0.5em; position: absolute; top: 362px;left: 230px;">Water Consumed</div>
-						<div style="font-size: 0.5em; position: absolute; top: 25px; left: 0;">Work Efficiency</div>
+						<div style="font-size: 0.5em; position: absolute; top: 362px;left: 230px;">Getrunkenes Wasser</div>
+						<div style="font-size: 0.5em; position: absolute; top: 25px; left: 0;">Arbeitseffizienz</div>
 						<div class="fragment" data-fragment-index="1" style="float: right; width: 58%; font-size: 0.7em; text-align: left;">
-							<p>Choose the best polynomial:</p>
+							<p>Suche den passendsten Polynomgrad:</p>
 							<p>\(y = \Theta_1x + \Theta_2\)</p>
 							<p class="fragment highlight-red" data-fragment-index="2">\(y = \Theta_1x^2 + \Theta_2x + \Theta_3\)</p>
 							<p>\(y = \Theta_1x^3 + \Theta_2x^2 + \Theta_3x + \Theta_4\)</p>
 							<p>&hellip;</p>
 						</div>
 						<aside class="notes">
-							- whats the best polynomial? often trial and error
+							- Bester Polygrad? Meist ausprobieren.
 						</aside>
 					</section>
 					<section>
-						<h2>Where is the learning part?</h2>
+						<h2>Und wo lernt der Algorithmus jetzt?</h2>
 					</section>
 					<section>
 						<div style="position: relative; float: left; width: 40%;">
@@ -247,62 +247,62 @@
 						<div style="float: right; width: 58%; font-size: 0.7em; text-align: left;">
 							<p style="margin: 0 0 50px 0;">\(y = \Theta_1x^2 + \Theta_2x + \Theta_3\)</p>
 							<ol>
-								<li class="fragment" data-fragment-index="1">Create a function with \(\Theta_{1-3}\) as variables that sums up the error (Cost Function)</li>
-								<li class="fragment" data-fragment-index="2">Find a minimum of the cost function using an approximation algorithm like Gradient Descent</li>
-								<li class="fragment" data-fragment-index="3">Use \(\Theta_{1-3}\) so that you get the smallest error</li>
+								<li class="fragment" data-fragment-index="1">Erstelle eine Funktion mit den Variablen \(\Theta_{1-3}\), die die Abweichung summiert (Cost Function)</li>
+								<li class="fragment" data-fragment-index="2">Finde den Minimalwert dieser Funktion mit einem Annäherungsalgorithmus wie Gradient Descent</li>
+								<li class="fragment" data-fragment-index="3">Nutze diese Werte für \(\Theta_{1-3}\) um das passendste Modell zu erhalten</li>
 							</ol>
-							<p class="fragment" style="margin: 50px 0 0 0;" data-fragment-index="4">Libraries do that for you! \o/</p>
+							<p class="fragment" style="margin: 50px 0 0 0;" data-fragment-index="4">Das machen die Libraries für Dich! \o/</p>
 						</div>
 					</section>
 					<section>
-						<h2>Multiple features</h2>
+						<h2>Mehrere Features</h2>
 						<div style="font-size: 0.7em;">
-							<p class="fragment">Features: \(x_{(1)}\) and \(x_{(2)}\)</p>
-							<p class="fragment">Both linear:<br />
+							<p class="fragment">Features: \(x_{(1)}\) und \(x_{(2)}\)</p>
+							<p class="fragment">Beide linear:<br />
 								\(y = \Theta_1x_{(1)} + \Theta_2x_{(2)} + \Theta_3\)
 							</p>
-							<p class="fragment">\(x_{(1)}\) quadratic, \(x_{(2)}\) linear:<br />
+							<p class="fragment">\(x_{(1)}\) quadratisch, \(x_{(2)}\) linear:<br />
 								\(y = \Theta_1x_{(1)}^2 + \Theta_2x_{(1)} + \Theta_3x_{(2)} + \Theta_4\)
 							</p>
 						</div>
 						<aside class="notes">
-							- in ml, most algorithms use vector calculation and matrices
+							- Wird oft in Vektoren geschrieben
 						</aside>
 					</section>
 					<section>
-						<h2>Linear Regression - Facts</h2>
+						<h2>Linear Regression - Fakten</h2>
 						<ul>
-							<li class="fragment">Computationally cheap once trained</li>
-							<li class="fragment">Often used in recommendation systems</li>
-							<li class="fragment">May be hard to find best polynomial</li>
+							<li class="fragment">Nach dem Trainieren sehr effizient</li>
+							<li class="fragment">Oft in Recommendation Systems im Einsatz</li>
+							<li class="fragment">Wahl der richtigen Features / des Polynomgrades ist oft schwer</li>
 						</ul>
 					</section>
 				</section>
 				<section>
 					<section>
-						<h2>Overfitting and Underfitting</h2>
+						<h2>Overfitting und Underfitting</h2>
 						<img class="plain fragment" style="width: 300px" src="img/fitting-no-curve.svg"/>
 						<aside class="notes">
-							- here: linear regression, but valid for all ml-algos
+							- Hier für Linear Regression, aber gilt für alle Algos
 						</aside>
 					</section>
 					<section>
 						<img class="plain" style="width: 300px" src="img/fitting-ok.svg"/>
 						<p class="fragment">\(y = \Theta_1x^2 + \Theta_2x + \Theta_3\)</p>
-						<p class="fragment">Model is just right!</p>
-						<p class="fragment">Follows the overall trend but skips outliers.</p>
+						<p class="fragment">Das Modell passt gut!</p>
+						<p class="fragment">Folgt dem Trend, aber lässt Ausreißer aus.</p>
 					</section>
 					<section>
 						<img class="plain" style="width: 300px" src="img/underfitting.svg"/>
 						<p class="fragment">\(y = \Theta_1x + \Theta_2\)</p>
-						<p class="fragment">Model is too simple: Underfitting / Low Variance / High Bias!</p>
-						<p class="fragment">Bad performance on training set / predictions.</p>
+						<p class="fragment">Modell ist zu einfach: Underfitting / Low Variance / High Bias!</p>
+						<p class="fragment">Schlechte Vorhersagen auf dem Trainingsset und vermutl. auch später</p>
 					</section>
 					<section>
 						<img class="plain" style="width: 300px" src="img/overfitting.svg"/>
 						<p class="fragment">\(y = \Theta_1x^{6} + \Theta_2x^{5} + \ldots\)</p>
-						<p class="fragment">Model is too complex: Overfitting / High Variance / Low Bias!</p>
-						<p class="fragment">The model captures noise / outliers.</p>
+						<p class="fragment">Modell ist zu komplex: Overfitting / High Variance / Low Bias!</p>
+						<p class="fragment">Das Modell nimmt jeden Messfehler / Ausreißer auf.</p>
 					</section>
 				</section>
 				<section>
@@ -322,18 +322,18 @@
 						<div style="float: right; width: 29%; font-size: 0.7em;">
 							<img class="plain fragment" data-fragment-index="4" src="img/repeat-arrow.svg" style="position: absolute; top: 133px; left: 594px; height: 143px;"/>
 							<ol>
-								<li class="fragment" data-fragment-index="1" style="margin: 0 0 1em 0;">Choose number of clusters and initialize centers</li>
-								<li class="fragment" data-fragment-index="2" style="margin: 0 0 1em 0;">Assign points to cluster</li>
-								<li class="fragment" data-fragment-index="3" style="margin: 0 0 1em 0;">Calculate centroid and move cluster center</li>
+								<li class="fragment" data-fragment-index="1" style="margin: 0 0 1em 0;">Wähle die Anzahl von Clustern und deren vorläufige Zentren</li>
+								<li class="fragment" data-fragment-index="2" style="margin: 0 0 1em 0;">Weise die Punkte den nächsten Clustern zu</li>
+								<li class="fragment" data-fragment-index="3" style="margin: 0 0 1em 0;">Verschiebe Zentrum in den geom. Mittelpunkt</li>
 							</ol>
 						</div>
 					</section>
 					<section>
-						<h2>K-Means - Facts</h2>
+						<h2>K-Means - Fakten</h2>
 						<ul>
-							<li class="fragment">Algorithm is simple and scalable</li>
-							<li class="fragment">You have to specify the number of clusters in advance</li>
-							<li class="fragment">Result quality relies heavily on <a href="http://www.naftaliharris.com/blog/visualizing-k-means-clustering/">initialization of clusters</a></li>
+							<li class="fragment">Der Algorithmus ist simpel und skalierbar</li>
+							<li class="fragment">Die Anzahl der gewünschten Cluster muss festgelegt werden</li>
+							<li class="fragment">Das Ergebnis hängt stark von der Wahl der <a href="http://www.naftaliharris.com/blog/visualizing-k-means-clustering/">anfänglichen Zentren</a> ab</li>
 						</ul>
 					</section>
 				</section>
@@ -349,40 +349,40 @@
 						<img src="img/neural1.svg" class="plain" style="width:40%; float: left;"/>
 						<div style="width: 58%; float: right; text-align: left; font-size: 0.7em;">
 							<p class="fragment" data-fragment-index="1" style="margin: 0 0 2em 0;">\(y = g(\Theta_1 x_1 + \Theta_2 x_2 + \Theta_3 x_3)\)</p>
-							<p class="fragment" data-fragment-index="2">\(\Theta_i\): Weights / parameters of the network. Learned by minimizing error on training data (Gradient Descent).</p>
-							<p class="fragment" data-fragment-index="3">\(g\): The sigmoid function to get output between 0 and 1:</p>
+							<p class="fragment" data-fragment-index="2">\(\Theta_i\): Gewichtungen / Parameter des Netzes. Werden durch Gradient Descent angelernt.</p>
+							<p class="fragment" data-fragment-index="3">\(g\): Die Sigmoid-Funktion, die die Ausgabe auf Wert zwischen 0 und 1 bringt:</p>
 							<p class="fragment" data-fragment-index="4" style="margin: 0 0 2em 0;">
 								\(g(z) = {1 \over {1 + e^{-z}}}\)
 								<img class="fragment" data-fragment-index="4" src="img/sigmoid.png" style="background: #fff; width: 250px; vertical-align: middle;"/>
 							</p>
-							<p class="fragment" data-fragment-index="5">If \(y < 0.5\), classify as class 1, otherwise class 2.</p>
+							<p class="fragment" data-fragment-index="5">Wenn \(y < 0.5\) wird der Datensatz als Klasse 1 klassifiziert, sonst Klasse 2.</p>
 						</div>
 						<aside class="notes">
-							- y is the neuron
+							- y ist das Neuron
 						</aside>
 					</section>
 					<section>
 						<img src="img/neural2.svg" class="plain" style="width:40%; float: left;"/>
 						<div style="width: 58%; float: right; text-align: left; font-size: 0.7em;">
 							<p>Hidden Layers:</p>
-							<p>Layers between input and output layer to increase the complexity of the model.</p>
-							<p class="fragment">Remember overfitting and underfitting!</p>
-							<p class="fragment">Try different amounts of hidden layers and neurons in each layer for your problem.</p>
+							<p>Layers zwischen Input- und Output-Layer, um mehr Komplexität / Varianz in das Modell zu bringen.</p>
+							<p class="fragment">Achte auf Overfitting und Underfitting!</p>
+							<p class="fragment">Teste unterschiedlich viele Hidden Layers mit unterschiedlich vielen Neuronen.</p>
 						</div>
 					</section>
 					<section>
 						<img src="img/neural3.svg" class="plain" style="width:40%; float: left;"/>
 						<div style="width: 58%; float: right; text-align: left; font-size: 0.7em;">
-							<p>More than 2 classes? No problem!</p>
-							<p class="fragment">Use one \(y\) for each class. The one with the highest value between 0 and 1 wins.</p>
+							<p>Du brauchst mehr als 2 Klassen? Kein Problem!</p>
+							<p class="fragment">Nutze für jede Klasse ein \(y\). Die Klasse mit dem höchsten Wert zwischen 0 und 1 wird zugewiesen.</p>
 						</div>
 					</section>
 					<section>
-						<h2>Neural Networks - Facts</h2>
+						<h2>Neural Networks - Fakten</h2>
 						<ul>
-							<li class="fragment">Very flexible and thus suitable for most classification problems</li>
-							<li class="fragment">Google's AlphaGo uses multiple neural networks</li>
-							<li class="fragment">Computationally expensive</li>
+							<li class="fragment">Sehr flexibel und geeignet für die meisten Klassifizierungsprobleme</li>
+							<li class="fragment">Googles AlphaGo nutzt mehrere Neural Networks</li>
+							<li class="fragment">Sehr rechenintensiv bei vielen Layern / Neuronen</li>
 						</ul>
 					</section>
 				</section>
@@ -391,7 +391,7 @@
 				</section>
 				<section>
 					<section>
-						<h2>Popular Libraries</h2>
+						<h2>Beliebte Libraries</h2>
 						<table class="centered-table">
 							<tr class="fragment">
 								<th>Java</th>
@@ -427,66 +427,66 @@
 							</tr>
 						</table>
 						<aside class="notes">
-							Java solutions mainly for distributed environments
+							Java-Libs eher für verteilte Systeme
 						</aside>
 					</section>
 					<section>
-						<p>Success depends primarily on the data,<br/>not on using the best library!</p>
+						<p>Der Erfolg hängt stärker von den Daten ab<br/>als von der genutzten Library!</p>
 						<aside class="notes">
-							Success regarding ML, not overall project. ;)
+							... natürlich nur bezogen auf den ML-Part der Anwendung
 						</aside>
 					</section>
 				</section>
 
 				<section>
 					<section>
-						<h2>So...<br />Just Data In, Knowledge Out?</h2>
+						<h2>Also einfach Daten rein und alles läuft?</h2>
 					</section>
 					<section>
-						<h2>Guidelines &amp; Tips</h2>
+						<h2>Tipps</h2>
 						<ul>
-							<li class="fragment fade-up">Choose the algorithm that best fits your data / problem</li>
-							<li class="fragment fade-up">Fine-tune the model / algorithm
+							<li class="fragment fade-up">Nutze den Algorithmus, der am besten zu den Daten / dem Problem passt</li>
+							<li class="fragment fade-up">Finde die richtigen Einstellungen für den Algorithmus
 								<ul>
-									<li>Visualize some of your features to get hints</li>
-									<li>Try different configurations (maybe automated)</li>
+									<li>Visualisiere Teile Deiner Daten</li>
+									<li>Probiere verschiedene Konfigurationen (automatisiert) durch</li>
 								</ul>
 							</li>
-							<li class="fragment fade-up">Don't be afraid to start over / change features</li>
+							<li class="fragment fade-up">Einfach mal Modell und/oder Features hinterfragen</li>
 						</ul>
 					</section>
 				</section>
 				<section data-transition="convex-in fade-out">
-					<h2>How to Learn More?</h2>
+					<h2>Wie fange ich an?</h2>
 					<ul>
 						<li class="fragment fade-up">
 							Machine Learning @ Coursera
 							(<a href="https://www.coursera.org/learn/machine-learning">Link</a>)
 						</li>
 						<li class="fragment fade-up">
-							Machine Learning in Action by Peter Harrington
+							Machine Learning in Action von Peter Harrington
 							(<a href="https://www.manning.com/books/machine-learning-in-action">Link</a>)
 						</li>
-						<li class="fragment fade-up">Trial and error with
-							<a href="https://daoudclarke.github.io/machine%20learning%20in%20practice/2013/10/08/machine-learning-libraries/">common libraries</a>
-							and <a href="http://archive.ics.uci.edu/ml/datasets.html">sample data</a></li>
+						<li class="fragment fade-up">Einfach mit
+							<a href="https://daoudclarke.github.io/machine%20learning%20in%20practice/2013/10/08/machine-learning-libraries/">beliebten Libraries</a>
+							und <a href="http://archive.ics.uci.edu/ml/datasets.html">Testdaten</a> loslegen</li>
 					</ul>
 				</section>
 				<section data-background="#000">
 					<aside class="notes">
-						Recap goals:<br />
-						What is ML?<br />
-						What kind of problems can be solved?<br />
-						Impressions of how it works + what the challenges are.<br />
-						How to get started?
+						Rückblick:<br />
+						Was ist ML?<br />
+						Welche Probleme können gelöst werden?<br />
+						Vorstellung verschiedener Methoden / generelles Verständnis.<br />
+						Wo fange ich an?
 					</aside>
 				</section>
 				<section data-transition="fade-in convex-out">
-					<h2>Thank you!</h2>
+					<h2>Danke fürs Zuhören!</h2>
 					<img src="img/happybot.png" class="plain" style="width: 400px;"/>
 					<div class="bubble fragment fade-left" style="top: 352px; left: 634px;">
 						<div class="bubble-corner"></div>
-						Questions?
+						Fragen?
 					</div>
 				</section>
 			</div>
