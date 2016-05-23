@@ -73,6 +73,11 @@
 						<img src="img/car.jpg" style="width: 500px;"/>
 						<div class="image-source">http://www.google.com/selfdrivingcar/images/home-where.jpg</div>
 						<p>Self-Driving Cars</p>
+					</section>
+					<section>
+						<img src="img/ai.jpg" style="width: 500px;"/>
+						<div class="image-source">http://static2.techinsider.io/image/56e186c8910584716f8b53b5-1200-675/go%20board%20wide.jpg</div>
+						<p>Artificial Intelligence</p>
 						<aside class="notes">
 							Show demo part1
 						</aside>
@@ -121,6 +126,7 @@
 							</ul>
 						</div>
 						<aside class="notes">
+							- Break every problem down into features<br />
 							- Example: Percentage of match for dating site; Percentage for chance of winning for specific game move<br />
 							- Classification: Email: Spam or no Spam?<br />
 							- Transition: How to teach the algorithm?
@@ -213,6 +219,10 @@
 						</table>
 						<div class="fragment" data-fragment-index="1" style="position: absolute; left: 656px; top: 133px; border-left: 1px solid #DCB481; height: 286px; padding: 0 0 0 10px;">Training Data</div>
 						<div class="fragment" data-fragment-index="2" style="position: absolute; left: 656px; top: 443px; border-left: 1px solid #DCB481; height: 46px; padding: 0 0 0 10px;">Prediction</div>
+						<aside class="notes">
+							- so just one feature<br />
+							- normally LOADS of training data
+						</aside>
 					</section>
 					<section>
 						<div style="position: relative; float: left; width: 40%;">
@@ -228,24 +238,37 @@
 							<p>\(y = \Theta_1x^3 + \Theta_2x^2 + \Theta_3x + \Theta_4\)</p>
 							<p>&hellip;</p>
 						</div>
+						<aside class="notes">
+							- normally not one feature -> much more complicated -> trial &amp; error
+						</aside>
 					</section>
 					<section>
 						<h2>Where is the learning part?</h2>
 					</section>
 					<section>
-						<h2>Gradient Descent</h2>
 						<div style="position: relative; float: left; width: 40%;">
 							<img class="fragment plain fade-out" data-fragment-index="1" src="img/fitting-ok.svg" style="position: absolute; width: 100%;"/>
-							<!-- TODO--><img class="fragment plain" data-fragment-index="1" src="img/fitting-ok.svg" style="width: 100%;"/>
+							<img class="fragment plain" data-fragment-index="1" src="img/gradientdescent.svg" style="width: 100%;"/>
 						</div>
 						<div style="float: right; width: 58%; font-size: 0.7em; text-align: left;">
-							<p>\(y = \Theta_1x^2 + \Theta_2x + \Theta_3\)</p>
+							<p style="margin: 0 0 50px 0;">\(y = \Theta_1x^2 + \Theta_2x + \Theta_3\)</p>
+							<ol>
+								<li class="fragment" data-fragment-index="1">Create a function with \(\Theta_{1-3}\) as variables that sums up the error (Cost Function)</li>
+								<li class="fragment" data-fragment-index="2">Find a minimum of the cost function using an approximation algorithm like Gradient Descent</li>
+								<li class="fragment" data-fragment-index="3">Use \(\Theta_{1-3}\) so that you get the smallest error</li>
+							</ol>
+							<p class="fragment" style="margin: 50px 0 0 0;" data-fragment-index="4">Libraries do that for you! \o/</p>
 						</div>
+						<aside class="notes">
+							- Choice of polynomial and trained thetas are your model!
+						</aside>
 					</section>
 					<section>
 						<h2>Linear Regression - Facts</h2>
 						<ul>
-							<li></li>
+							<li class="fragment">Computationally cheap once trained</li>
+							<li class="fragment">Often used in recommendation systems</li>
+							<li class="fragment">May be hard to find best polynomial</li>
 						</ul>
 					</section>
 				</section>
@@ -253,22 +276,25 @@
 					<section>
 						<h2>Overfitting and Underfitting</h2>
 						<img class="plain fragment" style="width: 300px" src="img/fitting-no-curve.svg"/>
+						<aside class="notes">
+							- here: linear regression, but valid for all ml-algos
+						</aside>
 					</section>
 					<section>
 						<img class="plain" style="width: 300px" src="img/fitting-ok.svg"/>
-						<p class="fragment">\(f(x) = ax^2 * bx + c\)</p>
+						<p class="fragment">\(y = \Theta_1x^2 * \Theta_2x + \Theta_3\)</p>
 						<p class="fragment">Model is just right!</p>
 						<p class="fragment">Follows the overall trend but skips outliers.</p>
 					</section>
 					<section>
 						<img class="plain" style="width: 300px" src="img/underfitting.svg"/>
-						<p class="fragment">\(f(x) = ax + b\)</p>
+						<p class="fragment">\(y = \Theta_1x + \Theta_2\)</p>
 						<p class="fragment">Model is too simple: Underfitting / Low Variance / High Bias!</p>
-						<p class="fragment">Predictions using this model will probably be inaccurate.</p>
+						<p class="fragment">Bad performance on training set / predictions.</p>
 					</section>
 					<section>
 						<img class="plain" style="width: 300px" src="img/overfitting.svg"/>
-						<p class="fragment">\(f(x) = ax^{6} + bx^{5} + \ldots\)</p>
+						<p class="fragment">\(y = \Theta_1x^{6} + \Theta_2x^{5} + \ldots\)</p>
 						<p class="fragment">Model is too complex: Overfitting / High Variance / Low Bias!</p>
 						<p class="fragment">The model captures noise / outliers.</p>
 					</section>
@@ -317,7 +343,7 @@
 						<img src="img/neural1.svg" class="plain" style="width:40%; float: left;"/>
 						<div style="width: 58%; float: right; text-align: left; font-size: 0.7em;">
 							<p class="fragment" data-fragment-index="1" style="margin: 0 0 2em 0;">\(y = g(\Theta_1 x_1 + \Theta_2 x_2 + \Theta_3 x_3)\)</p>
-							<p class="fragment" data-fragment-index="2">\(\Theta_i\): Weights / parameters of the network. Learned by minimizing prediction error on training data (Gradient Descent).</p>
+							<p class="fragment" data-fragment-index="2">\(\Theta_i\): Weights / parameters of the network. Learned by minimizing error on training data (Gradient Descent).</p>
 							<p class="fragment" data-fragment-index="3">\(g\): The sigmoid function to get output between 0 and 1:</p>
 							<p class="fragment" data-fragment-index="3" style="margin: 0 0 2em 0;">
 								\(g(z) = {1 \over {1 + e^{-z}}}\)
@@ -326,7 +352,7 @@
 							<p class="fragment" data-fragment-index="5">If \(y < 0.5\), classify as class 1, otherwise class 2.</p>
 						</div>
 						<aside class="notes">
-							y is the neuron's output
+							- y is the neuron's output
 						</aside>
 					</section>
 					<section>
