@@ -215,11 +215,32 @@
 						<div class="fragment" data-fragment-index="2" style="position: absolute; left: 656px; top: 443px; border-left: 1px solid #DCB481; height: 46px; padding: 0 0 0 10px;">Prediction</div>
 					</section>
 					<section>
-						<img class="fragment fade-out plain" data-fragment-index="1" src="img/fitting-no-curve.svg" style="position: absolute;"/>
-						<img class="fragment plain" data-fragment-index="1" src="img/fitting-ok.svg"/>
+						<div style="position: relative; float: left; width: 40%;">
+							<img class="fragment fade-out plain" data-fragment-index="2" src="img/fitting-no-curve.svg" style="position: absolute; width: 100%;"/>
+							<img class="fragment plain" data-fragment-index="2" src="img/fitting-ok.svg" style="width: 100%;"/>
+						</div>
+						<div style="font-size: 0.5em; position: absolute; top: 362px;left: 230px;">Water Consumed</div>
+						<div style="font-size: 0.5em; position: absolute; top: 25px; left: 0;">Work Efficiency</div>
+						<div class="fragment" data-fragment-index="1" style="float: right; width: 58%; font-size: 0.7em; text-align: left;">
+							<p>Choose the best linear polynomial:</p>
+							<p>\(y = \Theta_1x + \Theta_2\)</p>
+							<p class="fragment highlight-red" data-fragment-index="2">\(y = \Theta_1x^2 + \Theta_2x + \Theta_3\)</p>
+							<p>\(y = \Theta_1x^3 + \Theta_2x^2 + \Theta_3x + \Theta_4\)</p>
+							<p>&hellip;</p>
+						</div>
+					</section>
+					<section>
+						<h2>Where is the learning part?</h2>
 					</section>
 					<section>
 						<h2>Gradient Descent</h2>
+						<div style="position: relative; float: left; width: 40%;">
+							<img class="fragment plain fade-out" data-fragment-index="1" src="img/fitting-ok.svg" style="position: absolute; width: 100%;"/>
+							<!-- TODO--><img class="fragment plain" data-fragment-index="1" src="img/fitting-ok.svg" style="width: 100%;"/>
+						</div>
+						<div style="float: right; width: 58%; font-size: 0.7em; text-align: left;">
+							<p>\(y = \Theta_1x^2 + \Theta_2x + \Theta_3\)</p>
+						</div>
 					</section>
 					<section>
 						<h2>Linear Regression - Facts</h2>
@@ -393,7 +414,12 @@
 						<h2>Guidelines &amp; Tips</h2>
 						<ul>
 							<li class="fragment fade-up">Choose the algorithm that best fits your data / problem</li>
-							<li class="fragment fade-up">Fine-tune the model / algorithm</li>
+							<li class="fragment fade-up">Fine-tune the model / algorithm
+								<ul>
+									<li>Visualize some of your features to get hints</li>
+									<li>Try different configurations (maybe automated)</li>
+								</ul>
+							</li>
 							<li class="fragment fade-up">Don't be afraid to start over / change features</li>
 						</ul>
 					</section>
