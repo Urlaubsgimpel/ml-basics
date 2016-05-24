@@ -54,8 +54,12 @@ public class DigitClassification {
         System.out.println("Accuracy = " + evaluator.evaluate(predictionAndLabels));
 
         // Classify test image
-        Vector testVector = loadImage("data/testimage.png");
-        System.out.println(String.format("Test image classified as: %d", (int)model.predict(testVector)));
+        while (true) {
+            System.out.println("Press enter to classify test image.");
+            System.in.read();
+            Vector testVector = loadImage("data/testimage.png");
+            System.out.println(String.format("Test image classified as: %d", (int) model.predict(testVector)));
+        }
     }
 
     private static Vector loadImage(String path) throws IOException {
