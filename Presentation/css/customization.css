@@ -133,3 +133,36 @@ div.image-source {
     position: relative;
     top: -21px;
 }
+
+div.orange-box {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#522a1d+0,7c3f2c+100 */
+    background: rgb(82,42,29); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(82,42,29,1) 0%, rgba(124,63,44,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(82,42,29,1) 0%,rgba(124,63,44,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(82,42,29,1) 0%,rgba(124,63,44,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#522a1d', endColorstr='#7c3f2c',GradientType=0 ); /* IE6-9 */
+    border-radius: 10px;
+    border: 2px solid #424242;
+}
+
+div.green-box {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e3d13+0,40541a+100 */
+    background: rgb(46,61,19); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(46,61,19,1) 0%, rgba(64,84,26,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(46,61,19,1) 0%,rgba(64,84,26,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(46,61,19,1) 0%,rgba(64,84,26,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e3d13', endColorstr='#40541a',GradientType=0 ); /* IE6-9 */
+    border-radius: 10px;
+    border: 2px solid #424242;
+}
+
+div.blue-box {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#123b63+0,17487a+100 */
+    background: rgb(18,59,99); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(18,59,99,1) 0%, rgba(23,72,122,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(18,59,99,1) 0%,rgba(23,72,122,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(18,59,99,1) 0%,rgba(23,72,122,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#123b63', endColorstr='#17487a',GradientType=0 ); /* IE6-9 */
+    border-radius: 10px;
+    border: 2px solid #424242;
+}
