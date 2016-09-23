@@ -91,6 +91,7 @@ table.centered-table td,
 table.centered-table th {
     text-align: center;
     border: 0;
+    padding: 10px;
 }
 
 table.centered-table td:first-child,

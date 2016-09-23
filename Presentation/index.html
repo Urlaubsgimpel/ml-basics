@@ -60,6 +60,10 @@
 						<p>Image Analysis</p>
 					</section>
 					<section>
+						<img src="img/recommendersystems.png"/>
+						<p>Recommender Systems</p>
+					</section>
+					<section>
 						<img src="img/clinical.jpg"/>
 						<div class="image-source">https://illusionsofautonomy.files.wordpress.com/2014/01/house-white-board.jpg</div>
 						<p>Clinical Decision Support Systems</p>
@@ -181,9 +185,9 @@
 						<h2>Linear Regression</h2>
 					</section>
 					<section>
-						<table style="width: 61%; float: left;">
+						<table style="width: 61%; float: left; font-size: 0.8em;">
 							<tr>
-								<th>Water Consumed (ltr.)</th>
+								<th>Team Communication (h/day)</th>
 								<th>Work Efficiency (%)</th>
 							</tr>
 							<tr>
@@ -199,20 +203,20 @@
 								<td>80</td>
 							</tr>
 							<tr>
-								<td>3.0</td>
+								<td>2.0</td>
 								<td>100</td>
 							</tr>
 							<tr>
-								<td>3.5</td>
-								<td>85</td>
+								<td>3.0</td>
+								<td>75</td>
 							</tr>
 							<tr class="fragment" data-fragment-index="2">
 								<td>2.5</td>
 								<td>???</td>
 							</tr>
 						</table>
-						<div class="fragment" data-fragment-index="1" style="position: absolute; left: 656px; top: 133px; border-left: 1px solid #DCB481; height: 286px; padding: 0 0 0 10px;">Training Data</div>
-						<div class="fragment" data-fragment-index="2" style="position: absolute; left: 656px; top: 443px; border-left: 1px solid #DCB481; height: 46px; padding: 0 0 0 10px;">Prediction</div>
+						<div class="fragment" data-fragment-index="1" style="position: absolute;left: 643px;top: 117px;border-left: 1px solid #DCB481;height: 221px;padding: 0 0 0 10px;">Training Data</div>
+						<div class="fragment" data-fragment-index="2" style="position: absolute;left: 643px;top: 359px;border-left: 1px solid #DCB481;height: 46px;padding: 0 0 0 10px;">Prediction</div>
 						<aside class="notes">
 							- so just one feature in this example, to be able to visualize<br />
 							- normally LOADS of training data
@@ -223,7 +227,7 @@
 							<img class="fragment fade-out plain" data-fragment-index="2" src="img/fitting-no-curve.svg" style="position: absolute; width: 100%;"/>
 							<img class="fragment plain" data-fragment-index="2" src="img/fitting-ok.svg" style="width: 100%;"/>
 						</div>
-						<div style="font-size: 0.5em; position: absolute; top: 362px;left: 230px;">Water Consumed</div>
+						<div style="font-size: 0.5em; position: absolute; top: 362px;left: 230px;">Team Communication</div>
 						<div style="font-size: 0.5em; position: absolute; top: 25px; left: 0;">Work Efficiency</div>
 						<div class="fragment" data-fragment-index="1" style="float: right; width: 58%; font-size: 0.7em; text-align: left;">
 							<p>Choose the best polynomial:</p>
@@ -273,8 +277,9 @@
 						<h2>Linear Regression - Facts</h2>
 						<ul>
 							<li class="fragment">Computationally cheap once trained</li>
-							<li class="fragment">Often used in recommendation systems</li>
-							<li class="fragment">May be hard to find best polynomial</li>
+							<li class="fragment">Not very flexible, because of linear model</li>
+							<li class="fragment">May be hard to find best polynomial / features</li>
+							<li class="fragment">Often used in recommender systems</li>
 						</ul>
 					</section>
 				</section>
@@ -382,8 +387,9 @@
 					<section>
 						<h2>Neural Networks - Facts</h2>
 						<ul>
-							<li class="fragment">Very flexible and thus suitable for most classification problems</li>
-							<li class="fragment">Computationally expensive</li>
+							<li class="fragment">Very flexible and able to model complex problems</li>
+							<li class="fragment">Prone to overfitting</li>
+							<li class="fragment">Computationally expensive during training</li>
 							<li class="fragment">Google's AlphaGo uses multiple neural networks</li>
 						</ul>
 					</section>
@@ -394,18 +400,7 @@
 				<section>
 					<section>
 						<h2>Popular Libraries</h2>
-						<table class="centered-table">
-							<tr class="fragment">
-								<th>Java</th>
-								<td>
-									Apache Spark (MLlib)<br />
-									<img src="img/spark.png" style="height: 50px; background-color: #FFF;"/>
-								</td>
-								<td>
-									Apache Mahout<br />
-									<img src="img/mahout.png" style="height: 50px; "/>
-								</td>
-							</tr>
+						<table class="centered-table" style="font-size: 0.6em;">
 							<tr class="fragment">
 								<th>Python</th>
 								<td>
@@ -418,13 +413,30 @@
 								</td>
 							</tr>
 							<tr class="fragment">
+								<th>Go</th>
+								<td colspan="2">
+									GoLearn <img src="img/golearn.jpg" style="height: 80px; background-color: #FFF; vertical-align: middle; margin-left: 30px;"/>
+								</td>
+							</tr>
+							<tr class="fragment">
+								<th>Java</th>
+								<td>
+									Apache Spark (MLlib)<br />
+									<img src="img/spark.png" style="height: 50px; background-color: #FFF;"/>
+								</td>
+								<td>
+									Apache Mahout<br />
+									<img src="img/mahout.png" style="height: 50px; "/>
+								</td>
+							</tr>
+							<tr class="fragment">
 								<th>"Big Players"</th>
 								<td>
 									Tensorflow (Google)<br />
-									<img src="img/tensorflow.png" style="height: 50px; background-color: #FFF;"/>
+									<img src="img/tensorflow.png" style="height: 30px; background-color: #FFF;"/>
 								</td>
 								<td>
-									DSSTNE (Amazon)
+									DSSTNE / "Destiny"<br />(Amazon)
 								</td>
 							</tr>
 						</table>
@@ -457,6 +469,18 @@
 							<li class="fragment fade-up">Don't be afraid to start over / change features</li>
 						</ul>
 					</section>
+				</section>
+				<section>
+					<h2>Which Algorithm do I Need?</h2>
+					<ul>
+						<li class="fragment">Figure out, what algorithm category fits your problem (see <a href="#/2/4">earlier overview slide</a>)</li>
+						<li class="fragment">Learn about each algorithm's advantages and disadvantages</li>
+						<li class="fragment">
+							Look at <a href="http://scikit-learn.org/stable/_static/ml_map.png">some</a>
+							<a href="https://azure.microsoft.com/en-in/documentation/articles/machine-learning-algorithm-cheat-sheet/">cheat</a>
+							<a href="http://www.lauradhamilton.com/machine-learning-algorithm-cheat-sheet">sheets</a>
+						</li>
+					</ul>
 				</section>
 				<section data-transition="convex-in fade-out">
 					<h2>How to Learn More?</h2>
