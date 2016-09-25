@@ -30,13 +30,16 @@
 					<small class="small-annotation" style="left: 121px; top: 16px;">The Basics of</small>
 					<h1>Machine Learning</h1>
 					<img src="images/portal.jpg" style="width: 400px;"/>
-					<h3 class="fragment fade-up">No magic, just math!</h3>
+					<h3 data-fragment-index="1" class="fragment fade-up">No magic, just math!</h3>
+					<p data-fragment-index="2" class="fragment current-visible" style="position: absolute;left: 367px;">Roman Tilgner</p>
+					<p data-fragment-index="3" class="fragment" style="color: #66FF66;position: absolute;left: 350px;">Roman Seyffarth</p>
+					<p data-fragment-index="2" class="fragment" style="font-size: 0.7em;position: absolute;left: 392px;top: 600px;">@urlaubsgimpel</p>
 					<aside class="notes">
 						Goal for this talk:<br />
-						What is ML?<br />
-						What kind of problems can be solved?<br />
-						Impressions of how it works + what the challenges are.<br />
-						How to get started?
+						- What is ML? / Introduction to topic<br />
+						- What kind of problems can be solved?<br />
+						- Basic understanding of how it works + what the challenges are.<br />
+						- How to get started?
 					</aside>
 				</section>
 				<section>
@@ -82,6 +85,9 @@
 						<img src="images/ai.jpg" style="width: 500px;"/>
 						<div class="image-source">http://static2.techinsider.io/image/56e186c8910584716f8b53b5-1200-675/go%20board%20wide.jpg</div>
 						<p>Artificial Intelligence</p>
+						<aside class="notes">
+							- Another topic: Content generation / fancy images drawn by Google algorithms
+						</aside>
 					</section>
 				</section>
 				<section>
@@ -95,7 +101,7 @@
 						</blockquote>
 						<p style="text-align:right">– Arthur Samuel (1959)</p>
 						<aside class="notes">
-							What does "learn" mean?
+							&gt; What does "learn" mean?
 						</aside>
 					</section>
 					<section>
@@ -127,10 +133,9 @@
 							</ul>
 						</div>
 						<aside class="notes">
-							- Break every problem down into features<br />
-							- Example: Percentage of match for dating site; Percentage for chance of winning for specific game move<br />
-							- Classification: Email: Spam or no Spam?<br />
-							- Transition: How to teach the algorithm?
+							- Example prediction: Percentage of match for dating site; Percentage for chance of winning for specific game move<br />
+							- Example classification: Spam<br />
+							&gt; How to tech algorithm?
 						</aside>
 					</section>
 					<section>
@@ -218,8 +223,8 @@
 						<div class="fragment" data-fragment-index="1" style="position: absolute;left: 643px;top: 117px;border-left: 1px solid #DCB481;height: 221px;padding: 0 0 0 10px;">Training Data</div>
 						<div class="fragment" data-fragment-index="2" style="position: absolute;left: 643px;top: 359px;border-left: 1px solid #DCB481;height: 46px;padding: 0 0 0 10px;">Prediction</div>
 						<aside class="notes">
-							- so just one feature in this example, to be able to visualize<br />
-							- normally LOADS of training data
+							- Here: Just one feature<br />
+							- Normally LOADS of data
 						</aside>
 					</section>
 					<section>
@@ -237,7 +242,7 @@
 							<p>&hellip;</p>
 						</div>
 						<aside class="notes">
-							- whats the best polynomial? often trial and error
+							- How to find best polynomial? Mostly trial and error.
 						</aside>
 					</section>
 					<section>
@@ -270,7 +275,7 @@
 							</p>
 						</div>
 						<aside class="notes">
-							- in ml, most algorithms use vector calculation and matrices
+							- Often shown as vector calculations
 						</aside>
 					</section>
 					<section>
@@ -288,7 +293,7 @@
 						<h2>Overfitting and Underfitting</h2>
 						<img class="plain fragment" style="width: 300px" src="images/fitting-no-curve.svg"/>
 						<aside class="notes">
-							- here: linear regression, but valid for all ml-algos
+							- Topic valid for all algorithms
 						</aside>
 					</section>
 					<section>
@@ -351,6 +356,9 @@
 					</section>
 					<section>
 						<img src="images/neuron.png" style="background: #FFF; padding: 5px;"/>
+						<aside class="notes">
+							- Describe activation
+						</aside>
 					</section>
 					<section>
 						<img src="images/neural1.svg" class="plain" style="width:40%; float: left;"/>
@@ -365,7 +373,8 @@
 							<p class="fragment" data-fragment-index="5">If \(y < 0.5\), classify as class 1, otherwise class 2.</p>
 						</div>
 						<aside class="notes">
-							- y is the neuron
+							- y is the neuron<br />
+							- Other functions than sigmoid possible
 						</aside>
 					</section>
 					<section>
@@ -440,15 +449,9 @@
 								</td>
 							</tr>
 						</table>
-						<aside class="notes">
-							Java solutions mainly for distributed environments
-						</aside>
 					</section>
 					<section>
 						<p>Success depends primarily on the data,<br/>not on using the best library!</p>
-						<aside class="notes">
-							Success regarding ML, not overall project. ;)
-						</aside>
 					</section>
 				</section>
 
@@ -501,10 +504,10 @@
 				<section data-background="#000">
 					<aside class="notes">
 						Recap goals:<br />
-						What is ML?<br />
-						What kind of problems can be solved?<br />
-						Impressions of how it works + what the challenges are.<br />
-						How to get started?
+						- What is ML? / Introduction to topic<br />
+						- What kind of problems can be solved?<br />
+						- Basic understanding of how it works + what the challenges are.<br />
+						- How to get started?
 					</aside>
 				</section>
 				<section data-transition="fade-in convex-out">
@@ -514,6 +517,10 @@
 						<div class="bubble-corner"></div>
 						Questions?
 					</div>
+					<aside class="notes">
+						- Why did I chose the three algorithms? - Because IMHO simplest in category + NN<br />
+						- Are there ways to understand how a trained model makes its decisions? - Create data sets and test you model; Decision Trees 
+					</aside>
 				</section>
 			</div>
 		</div>
