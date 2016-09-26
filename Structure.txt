@@ -1,15 +1,20 @@
 Structure
 ---------
 
-- Introduction
-- Examples for Machine Learning + Demo of own OCR
-- Types of machine learning and when to use which?
-- Regression
-- Overfit and Underfit
-- K-Means
-- SVMs
-- Neural Networks
-- Demo again
-- How to learn more
-- Libraries
-- Thanks and Q&A (prepare two questions to ask to myself)
+- Hi, I'm Roman and I'm Happy to see you all here even if its late into the day and we heard a lot of great talks so far
+- Hoping to show you some cool things about machine learning, as its all around us these days, especially as a buzzword - but its no magic, just math
+- I have brought you an introduction to machine learning and I will get you started on this topic.
+    but if you are already experienced don't worry. i'm sure that you will get something out of this as well
+- One quick note: You will find me as "Roman Tilgner" in todays program, but two weeks ago,
+    I took my wife's name and you'll find me on twitter as urlaubsgimpel or under my new name: roman Seyffarth - so don't get confused
+- I think now were all set so let's begin! - as i said, machine learning is all around us...
+
+- Presentation
+- Demo
+- End of presentation
+
+- and that's it from me - thank you very much (pause)
+- does anyone from you have any questions or comments?
+...
+- if you have any more questions, just catch me later on
+- thank you again and have a great evening!
